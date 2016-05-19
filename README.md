@@ -1,5 +1,7 @@
 # NodeSchool-Vagrant
 
+[![Join the chat at https://gitter.im/koustuvsinha/nodeschool-vagrant](https://badges.gitter.im/koustuvsinha/nodeschool-vagrant.svg)](https://gitter.im/koustuvsinha/nodeschool-vagrant?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Vagrant Box to have all [Nodeschool](http://nodeschool.io) workshoppers as a dependency. Primarily made for [Nodeschool IEM-Kolkata International Day Workshop](http://nodeschool.io/iem-kolkata/).
 
 Motivated by [ByteKnacker](https://github.com/byteknacker)'s awesome [fcc-python-vagrant](https://github.com/byteknacker/fcc-python-vagrant) Project.
