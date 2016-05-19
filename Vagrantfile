@@ -6,8 +6,8 @@ Vagrant.configure("2") do |config|
     config.vm.box = "minimal/trusty64"
 
     # Create forwarding ports for client-guest machine access via localhost.
-    config.vm.network :forwarded_port, guest: 80, host: 8080
-    config.vm.network :forwarded_port, guest: 6000, host: 6000
+    config.vm.network :forwarded_port, guest: 80, host: 7331
+    config.vm.network :forwarded_port, guest: 6000, host: 9331
 
     # Add the tty fix as mentioned in issue 1673 on vagrant repo
     # To avoid 'stdin is not a tty' messages
