@@ -1,0 +1,9 @@
+### Vagrant Directory###
+.vagrant/
+**/.vagrant/
+
+### Custom Directories###
+**/.DS_Store/
+**/.idea/
+**/.otto/
+**/myvenv/
