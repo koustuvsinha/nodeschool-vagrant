@@ -1,6 +1,6 @@
 # NodeSchool-Vagrant
 
-Vagrant Box to have all Nodeschool workshoppers as a dependency. Primarily made for [Nodeschool IEM-Kolkata International Day Workshop](http://nodeschool.io/iem-kolkata/).
+Vagrant Box to have all [Nodeschool](http://nodeschool.io) workshoppers as a dependency. Primarily made for [Nodeschool IEM-Kolkata International Day Workshop](http://nodeschool.io/iem-kolkata/).
 
 Motivated by [ByteKnacker](https://github.com/byteknacker)'s awesome [fcc-python-vagrant](https://github.com/byteknacker/fcc-python-vagrant) Project.
 
@@ -51,6 +51,6 @@ If you are on Windows, restart your local machine after the installation of thes
 
 Note that you end up inside the Vagrant VM after these four steps. The VM is isolated from your local machine. Your current working directory has the absolute path of `/vagrant`, which is termed synced folder. It is in real-time sync with your `path/to/nodeschool-vagrant/` local git repo. That is how your local machine communicates with the Vagrant VM.
 
-# LICENSE
+## LICENSE
 
 [MIT](https://koustuvs.mit-license.org/)
