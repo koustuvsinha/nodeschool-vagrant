@@ -15,7 +15,7 @@ echo "---------------------------------------------"
 
 # install heroku toolbelt
 echo "-------------- Installing heroku toolbelt -------------------------"
-wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+# wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 # These shell script snippets are directly taken from heroku installation script
 # We want to avoid the apt-get update
 # add heroku repository to apt
@@ -41,14 +41,15 @@ echo "-------- Installing NVM & Node --------------"
 echo "---------------------------------------------"
 
 # install nvm
-su - vagrant -c "wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash"
+su - vagrant -c "wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash >/dev/null 2>&1"
 
 # source bash and install node
 su - vagrant <<NVM
 
 source ~/.nvm/nvm.sh
-echo 'sourcing done'
-nvm install 4.4.3
+echo 'Sourcing done'
+nvm install 4.4.3 > /dev/null 2>&1
+echo 'Installed node and npm successfully'
 
 NVM
 
@@ -60,29 +61,29 @@ su - vagrant <<WORKSHOPPERS
 
 source ~/.nvm/nvm.sh
 echo "Installing javascripting ..."
-npm i -g javascripting
+npm i -g javascripting 2>&1
 echo "Installing learnyounode ..."
-npm i -g learnyounode
+npm i -g learnyounode 2>&1
 echo "Installing git-it ..."
-npm i -g git-it
+npm i -g git-it 2>&1
 echo "Installing how-to-npm ..."
-npm i -g how-to-npm
+npm i -g how-to-npm 2>&1
 echo "Installing scope-chains-closures ..."
-npm i -g scope-chains-closures
+npm i -g scope-chains-closures 2>&1
 echo "Installing stream-adventure ..."
-npm i -g stream-adventure
+npm i -g stream-adventure 2>&1
 echo "Installing elementary-electron ..."
-npm i -g elementary-electron
+npm i -g elementary-electron 2>&1
 echo "Installing how-to-markdown ..."
-npm i -g how-to-markdown
+npm i -g how-to-markdown 2>&1
 echo "Installing functional-javascript-workshop ..."
-npm i -g functional-javascript-workshop
+npm i -g functional-javascript-workshop 2>&1
 echo "Installing expressworks ..."
-npm i -g expressworks
+npm i -g expressworks 2>&1
 echo "Installing promise-it-wont-hurt ..."
-npm i -g promise-it-wont-hurt
+npm i -g promise-it-wont-hurt 2>&1
 echo "Installing count-to-6 ..."
-npm i -g count-to-6
+npm i -g count-to-6 2>&1
 
 echo "All workshoppers installed."
 
